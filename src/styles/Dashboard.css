@@ -1,0 +1,135 @@
+.dashboard {
+    padding-top: calc(16px + env(safe-area-inset-top)); /* Espacio adicional para dispositivos móviles */
+    background-color: #121212; /* Fondo oscuro */
+    color: white;
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye contenido principal y footer */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .header {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .header-subtitle {
+    font-size: 14px;
+    color: #837d7d; /* Subtítulo gris claro */
+    margin-bottom: 4px;
+    
+  }
+  
+  .total {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .growth {
+    color: #4caf50;
+    font-size: 16px;
+    
+  } 
+  
+  .buying-power {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 16px;
+  }
+  
+  .buying-power-title {
+    font-size: 13px;
+    color: #837d7d; /* Subtítulo gris claro */
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  .buying-power-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .deposit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1d1f; /* Fondo gris oscuro */
+    color: white;
+    padding: 9px 24px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    /* border: 1px solid #4caf50; Borde verde */
+  }
+  
+  
+  .watchlist {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Permite que ocupe todo el espacio restante */ 
+  }
+  .top-movers {
+    flex: 1;
+  }
+  
+  .watchlist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:57px;
+    padding: 6px 16px;
+     border-bottom: 1px solid #1e1e1e; 
+  }
+  
+  .watchlist-item .positive {
+    color: #4caf50; /* Color para valores positivos */
+  }
+  
+  .watchlist-item .negative {
+    color: #f44336; /* Color para valores negativos */
+  }
+
+  .footer {
+    position: fixed; /* Fija el footer en la parte inferior */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1E1E1E; /* Fondo oscuro */
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .footer-item svg {
+    color: #535457;
+    margin-bottom: 4px;
+    font-size: 24px; /* Tamaño del icono */
+  }
